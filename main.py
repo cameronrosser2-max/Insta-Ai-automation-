@@ -1,5 +1,3 @@
-# Insta-Ai-automation-
-to send messages on instagram automatically 
 #!/usr/bin/env python3
 """
 Josh — Instagram DM Outreach Automation
@@ -9,10 +7,12 @@ and sends personalized cold DMs selling website services.
 QUICK SETUP — only change this section:
 """
 
+import os
+
 # ─────────────────── YOUR SETTINGS (edit these) ────────────────────────────
 
-IG_USERNAME   = "your_instagram_username"   # your IG login
-IG_PASSWORD   = "your_instagram_password"   # your IG password
+IG_USERNAME   = os.environ.get("IG_USERNAME")   # set in Railway dashboard
+IG_PASSWORD   = os.environ.get("IG_PASSWORD")   # set in Railway dashboard
 
 DAILY_DM_LIMIT   = 30     # max DMs per day (stay ≤ 40 to avoid bans)
 SESSION_FILE     = "ig_session.json"        # keeps you logged in between runs
@@ -46,7 +46,6 @@ ACCOUNTS_PER_HASHTAG = 50
 
 import csv
 import json
-import os
 import random
 import time
 import logging
