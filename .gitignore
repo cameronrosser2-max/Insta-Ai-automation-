@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+*.csv
+!*requirements*
+ig_session.json
+dm_counter.json
