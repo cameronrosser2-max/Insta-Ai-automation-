@@ -1,1 +1,3 @@
+# Core lead qualification (leads.py / qualify.py) needs only the stdlib.
+# instagrapi is required ONLY for the Instagram collector and DM outreach (main.py).
 instagrapi
