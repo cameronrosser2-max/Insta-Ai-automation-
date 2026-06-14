@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+ig_session.json
+dm_log.csv
+dm_counter.json
+qualified_leads.csv
